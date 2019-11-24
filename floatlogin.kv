@@ -1,0 +1,49 @@
+<TextInput>
+	size_hint: 5,1
+
+<Design>:
+	
+	name:name
+	surname:surname
+	email:email
+	password:password
+	
+	FloatLayout:
+		Label:
+			pos_hint:{"x":0.5,"top":5.5}
+			text: 'Name:'
+		TextInput:
+			pos_hint:{"x":2,"top":5.5}
+			id:name
+			multiline:False
+		
+		Label:
+			pos_hint:{"x":0.5,"top":4.5}
+			text: 'Surname:'
+		TextInput:
+			pos_hint:{"x":2,"top":4.5}
+			id:surname
+			multiline:False
+			
+		Label:
+			pos_hint:{"x":0.5,"top":3.5}
+			text: 'Email:'
+		TextInput:
+			pos_hint:{"x":2,"top":3.5}
+			id:email
+			multiline:False
+			
+		Label:
+			pos_hint:{"x":0.5,"top":2.5}
+			text: 'Password:'
+		TextInput:
+			pos_hint:{"x":2,"top":2.5}
+			id:password
+			multiline:False
+			
+		Button:
+			size_hint: 6.5,1
+			pos_hint: {"x":1,"top":1.3}
+			on_press:root.pressed()
+			text:'Submit'
+			
